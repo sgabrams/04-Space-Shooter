@@ -4,6 +4,8 @@
 [ext_resource path="res://Scripts/EnemyBullet.gd" type="Script" id=2]
 
 [node name="EnemyBullet" type="RigidBody2D"]
+mode = 2
+gravity_scale = 0.0
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]

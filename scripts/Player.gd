@@ -10,7 +10,7 @@ var velocity = Vector2(0,0)
 
 onready var VP = get_viewport_rect().size
 
-onready var Bullet_R = load("res://Scenes/Bullet_R.tscn")
+onready var Bullet_R = load("res://Scenes/Bulltet_R.tscn")
 
 
 signal health_changed
@@ -21,7 +21,7 @@ func _ready():
 	emit_signal("score_changed")
 
 func change_health(h):
-	health +- h
+	health += h
 	emit_signal("health_changed")
 	if health <= 0:
 		die()

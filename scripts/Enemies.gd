@@ -3,7 +3,7 @@ extends Node2D
 export var max_enemies = 5
 export var probability = 0.3
 
-onready var Enemy1 = load("res://Scenes/Enemy1.tscn")
+onready var Enemy1 = load("res://Scenes/Enemy.tscn")
 onready var Enemy2 = load("res://Scenes/Enemy2.tscn")
 
 func _ready():
