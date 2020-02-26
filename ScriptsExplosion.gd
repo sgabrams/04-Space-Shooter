@@ -4,5 +4,5 @@ func _ready():
 	pass
 
 
-func _on_Sprite_animation_finished():
+func _on_Timer_timeout():
 	queue_free()

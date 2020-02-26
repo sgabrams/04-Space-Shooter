@@ -12,6 +12,7 @@ func _ready():
 func _physics_process(delta):
 	var colliding = get_colliding_bodies()
 	for c in colliding:
+		print(c.name)
 		var explosion = Explosion.instance()
 		explosion.position = position
 		explosion.get_node("Sprite").playing = true
@@ -29,5 +30,3 @@ func _integrate_forces(state):
 	
 
 
-func _on_Timer_timeout():
-	pass # Replace with function body.
